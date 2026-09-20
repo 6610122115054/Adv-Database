@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Home, Search, Map, BarChart2, MonitorPlay, Settings, Bell, User } from 'lucide-react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
+import tiktokLogo from './assets/tiktok-icon.webp';
+import DiscoveryPage from './pages/DiscoveryPage.jsx';
 
 // ==========================================
 // 1. ส่วนประกอบหลัก (Components)
@@ -22,9 +24,11 @@ const Sidebar = () => {
   return (
     <div className="w-64 h-screen bg-white border-r border-slate-200 fixed left-0 top-0 flex flex-col shadow-sm">
       <div className="p-6 flex items-center gap-3 border-b border-slate-100">
-        <div className="w-10 h-10 bg-slate-900 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-md">
-          GenZ
-        </div>
+        <img
+  src={tiktokLogo}
+  alt="TikTok"
+  className="w-10 h-10 shrink-0 rounded-xl object-cover shadow-md"
+/>
         <span className="font-bold text-slate-800 text-lg leading-tight">TikTok<br/>Travel Trends</span>
       </div>
       <nav className="flex-1 p-4 space-y-1.5 overflow-y-auto">
@@ -158,7 +162,6 @@ const DashboardPage = () => {
 };
 
 // หน้าอื่นๆ (สร้างโครงไว้รอใส่ข้อมูล)
-const DiscoveryPage = () => <div className="p-8"><div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 min-h-[400px] flex items-center justify-center text-slate-400">เนื้อหาหน้า Data Discovery / Search</div></div>;
 const DestinationPage = () => <div className="p-8"><div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 min-h-[400px] flex items-center justify-center text-slate-400">เนื้อหาหน้า Destination Analysis</div></div>;
 const AnalyticsPage = () => <div className="p-8"><div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 min-h-[400px] flex items-center justify-center text-slate-400">เนื้อหาหน้า Behavior Analytics</div></div>;
 const ContentPage = () => <div className="p-8"><div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 min-h-[400px] flex items-center justify-center text-slate-400">เนื้อหาหน้า Content Optimization</div></div>;
