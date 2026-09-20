@@ -6,6 +6,8 @@ import tiktokLogo from './assets/tiktok-icon.webp';
 import DiscoveryPage from './pages/DiscoveryPage.jsx';
 import AnalyticsPage from './pages/AnalyticsPage.jsx';
 import ContentPage from './pages/ContentPage.jsx';
+import DestinationPage from './pages/DestinationPage.jsx';
+import SettingsPage from './pages/SettingsPage.jsx';
 
 // ==========================================
 // 1. ส่วนประกอบหลัก (Components)
@@ -164,9 +166,6 @@ const DashboardPage = () => {
 };
 
 // หน้าอื่นๆ (สร้างโครงไว้รอใส่ข้อมูล)
-const DestinationPage = () => <div className="p-8"><div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 min-h-[400px] flex items-center justify-center text-slate-400">เนื้อหาหน้า Destination Analysis</div></div>;
-const SettingsPage = () => <div className="p-8"><div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 min-h-[400px] flex items-center justify-center text-slate-400">เนื้อหาหน้า System & Settings</div></div>;
-
 // ==========================================
 // 3. ตัวรันแอปพลิเคชันหลัก
 // ==========================================
